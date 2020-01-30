@@ -32,6 +32,11 @@ function WeatherContainer() {
   }
 
   function getWeatherData() {
+    //checking if zipcode is invalid or search query is empty
+    if (!isValidZipCode || searchQuery === "") {
+      setIsValidZipCode(false); //upon clicking search return error code
+      return;
+    }
     //obtain data from api
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?zip=${searchQuery},us&appid=${API_KEY}`
@@ -48,7 +53,7 @@ function WeatherContainer() {
   }
 
   function convertToCelsius(temp) {
-    return temp - 273.15;
+    return (temp - 273.15).toFixed(0);
   }
 
   return (
