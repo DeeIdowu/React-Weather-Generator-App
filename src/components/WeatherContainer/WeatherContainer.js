@@ -33,6 +33,22 @@ function WeatherContainer() {
 
   function getWeatherData() {
     //obtain data from api
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?zip=${searchQuery},us&appid=${API_KEY}`
+    )
+      .then(response => response.json())
+      .then(data =>
+        setWeatherData({
+          temperature: convertToCelsius(data.main.temp),
+          humidity: data.main.humidity,
+          description: data.weather[0].description,
+          city: data.name //in accordance to openweather docs
+        })
+      );
+  }
+
+  function convertToCelsius(temp) {
+    return temp - 273.15;
   }
 
   return (
@@ -44,7 +60,7 @@ function WeatherContainer() {
             placeholder="Enter Zip Code"
             className="search-engine"
             onChange={updateSearchQuery}
-            maxLength="5"
+            maxLength="6"
           />
           <button onClick={getWeatherData} className="material-icons">
             search
