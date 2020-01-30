@@ -17,9 +17,17 @@
 }
 
 .weather-header div {
+  display: flex;
   border-bottom: 2px solid #eee;
   width: 80%;
   margin: auto;
+}
+
+.weather-header button {
+  border: none;
+  background: transparent;
+  color: #17a589;
+  cursor: pointer;
 }
 
 .search-engine {

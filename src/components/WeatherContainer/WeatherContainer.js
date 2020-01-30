@@ -18,6 +18,7 @@ function WeatherContainer() {
             className="search-engine"
             onChange={updateSearchQuery}
           />
+          <button className="material-icons">search</button>
         </div>
       </header>
     </div>
