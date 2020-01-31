@@ -6,23 +6,26 @@ function WeatherInfo(props) {
   return (
     <React.Fragment>
       <div>
-        <p>City:</p>
+        <p style={{ fontWeight: "bold" }}>City:</p>
         <p>{city}</p>
       </div>
-      <br></br>
+
       <div>
-        <p>Description:</p>
+        <p style={{ fontWeight: "bold" }}>Description:</p>
         <p>{description}</p>
       </div>
-      <br></br>
+
       <div>
-        <p>Humidity:</p>
-        <p>{humidity}</p>
+        <p style={{ fontWeight: "bold" }}>Temperature:</p>
+        <p>
+          {temperature}
+          <span className="degree-symbol"></span>C
+        </p>
       </div>
-      <br></br>
+
       <div>
-        <p>Temperature:</p>
-        <p>{temperature}</p>
+        <p style={{ fontWeight: "bold" }}>Humidity:</p>
+        <p>{humidity}%</p>
       </div>
     </React.Fragment>
   );
