@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Weather-Generator-App/static/css/main.8e319c0e.chunk.css",
+    "main.js": "/React-Weather-Generator-App/static/js/main.b3576108.chunk.js",
+    "main.js.map": "/React-Weather-Generator-App/static/js/main.b3576108.chunk.js.map",
+    "runtime-main.js": "/React-Weather-Generator-App/static/js/runtime-main.7554794d.js",
+    "runtime-main.js.map": "/React-Weather-Generator-App/static/js/runtime-main.7554794d.js.map",
+    "static/js/2.ed6c815a.chunk.js": "/React-Weather-Generator-App/static/js/2.ed6c815a.chunk.js",
+    "static/js/2.ed6c815a.chunk.js.map": "/React-Weather-Generator-App/static/js/2.ed6c815a.chunk.js.map",
+    "index.html": "/React-Weather-Generator-App/index.html",
+    "precache-manifest.f710bbc6ae7388025a70fe2ce2674039.js": "/React-Weather-Generator-App/precache-manifest.f710bbc6ae7388025a70fe2ce2674039.js",
+    "service-worker.js": "/React-Weather-Generator-App/service-worker.js",
+    "static/css/main.8e319c0e.chunk.css.map": "/React-Weather-Generator-App/static/css/main.8e319c0e.chunk.css.map",
+    "static/js/2.ed6c815a.chunk.js.LICENSE": "/React-Weather-Generator-App/static/js/2.ed6c815a.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7554794d.js",
+    "static/js/2.ed6c815a.chunk.js",
+    "static/css/main.8e319c0e.chunk.css",
+    "static/js/main.b3576108.chunk.js"
+  ]
+}
